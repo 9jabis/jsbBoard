@@ -59,8 +59,8 @@
 				script.println("</script>");
 			} else {
 				PrintWriter script = response.getWriter();
-				String real = "C:\\Users\\kjb99\\Desktop\\bbs\\jspBoard\\WebContent\\bbsUpload";
-				String commentReal = "C:\\Users\\kjb99\\Desktop\\bbs\\jspBoard\\WebContent\\commentUpload";
+				String real = "C:\\Users\\koo ja bin\\Desktop\\2학년 2학기\\JSP_B\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\jspBoard\\bbsUpload";
+				String commentReal = "C:\\Users\\koo ja bin\\Desktop\\2학년 2학기\\JSP_B\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\jspBoard\\commentUpload";
 				
 				File delFile = new File(real+"\\"+bbsID+"사진.jpg");
 				if(delFile.exists()){

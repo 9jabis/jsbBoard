@@ -94,7 +94,7 @@
 				} else {
 					PrintWriter script = response.getWriter();
 					if(fileName != null){
-						String real = "C:\\Users\\kjb99\\Desktop\\bbs\\jspBoard\\WebContent\\bbsUpload";
+						String real = "C:\\Users\\koo ja bin\\Desktop\\2학년 2학기\\JSP_B\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\jspBoard\\bbsUpload";
 						File delFile = new File(real+"\\"+bbsID+"사진.jpg");
 						if(delFile.exists()){
 							delFile.delete();

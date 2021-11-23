@@ -104,9 +104,9 @@
 						<%if(boardID==1){ %>
 						<tr>
 							<td colspan="4"><input type="text" id="map" name="map"
-								class="form-control" placeholder="주소" /></td>
+								class="form-control" placeholder="식단 구매처 주소" /></td>
 							<td colspan="1"><input type="button" onClick="goPopup();"
-								value="주소 검색" /></td>
+								value="식단 구매처 검색" /></td>
 						</tr>
 						<%} %>
 						<tr>
@@ -115,7 +115,12 @@
 									style="height: 350px;"></textarea></td>
 						</tr>
 						<tr>
-							<td colspan="5"><input type="file" name="fileName"></td>
+							<td colspan="5"><input type="file" name="fileName" onchange="readURL(this);"></td>
+							
+						</tr>
+						<tr>
+							<td colspan="5"><img style="float:left; width: 100px; height: 100px;" id="preview" alt="미리보기"/>
+							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -123,6 +128,19 @@
 			</form>
 		</div>
 	</div>
+	<script>
+	function readURL(input) {
+		  if (input.files && input.files[0]) {
+		    var reader = new FileReader();
+		    reader.onload = function(e) {
+		      document.getElementById('preview').src = e.target.result;
+		    };
+		    reader.readAsDataURL(input.files[0]);
+		  } else {
+		    document.getElementById('preview').src = "";
+		  }
+		}
+	</script>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

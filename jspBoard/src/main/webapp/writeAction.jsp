@@ -40,9 +40,11 @@
 		MultipartRequest multi = null;
 		
 		multi = new MultipartRequest(request,realFolder,maxSize,encType,new DefaultFileRenamePolicy());		
+		
 		String fileName = multi.getFilesystemName("fileName");
 		String bbsTitle = multi.getParameter("bbsTitle");
 		String bbsContent = multi.getParameter("bbsContent");
+		
 		bbs.setBbsTitle(bbsTitle);
 		bbs.setBbsContent(bbsContent);
 		if(boardID==1){

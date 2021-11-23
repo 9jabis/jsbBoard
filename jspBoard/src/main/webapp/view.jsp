@@ -129,7 +129,7 @@
 						<td colspan="3" align="right"><%= bbs.getBbsDate().substring(0,11) + bbs.getBbsDate().substring(11,13) + "시" +  bbs.getBbsDate().substring(14,16) + "분"  %></td>
 					</tr>
 					<% 	
-					String real = "C:\\Users\\kjb99\\Desktop\\bbs\\jspBoard\\WebContent\\bbsUpload";
+					String real = "C:\\Users\\koo ja bin\\Desktop\\2학년 2학기\\JSP_B\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\jspBoard\\bbsUpload";
 					File viewFile = new File(real+"\\"+bbsID+"사진.jpg");
 					if(viewFile.exists()){
 				%>
@@ -159,7 +159,7 @@
 							bad = bad + list.get(i).getBadEat();
 						} %>
 					<tr>
-						<td colspan="6" align="left">&nbsp;&nbsp;[주소]&nbsp;&nbsp;<a
+						<td colspan="6" align="left">&nbsp;&nbsp;[식단 구매처 주소]&nbsp;&nbsp;<a
 							href="https://map.naver.com/v5/search/<%=Map%>"><%=Map %></a></td>
 					</tr>
 					<tr align="center">
@@ -233,7 +233,7 @@
 												<tr>
 													<td colspan="5" align="left"><%= list.get(i).getCommentText() %>
 														<% 	
-												String commentReal = "C:\\Users\\kjb99\\Desktop\\bbs\\jspBoard\\WebContent\\commentUpload";
+												String commentReal = "C:\\Users\\koo ja bin\\Desktop\\2학년 2학기\\JSP_B\\.metadata\\.plugins\\org.eclipse.wst.server.core\\tmp0\\wtpwebapps\\jspBoard\\commentUpload";
 												File commentFile = new File(commentReal+"\\"+bbsID+"사진"+list.get(i).getCommentID()+".jpg");
 												if(commentFile.exists()){
 											%> <br>

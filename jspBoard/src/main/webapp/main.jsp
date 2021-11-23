@@ -37,6 +37,7 @@
 				<li><a href="bbs.jsp?boardID=1&pageNumber=1">식단 평가</a></li>
 				<li><a href="bbs.jsp?boardID=2&pageNumber=1">자유 게시판</a></li>
 				<li><a href="compare.jsp">운동 자세 비교</a></li>
+				<li><a href="fullcalendar.html">fullcalendar</a></li>
 			</ul>
 			<%
 				if(userID == null){		//로그인이 되어있지 않은 경우
